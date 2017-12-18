@@ -124,7 +124,18 @@ if (window.screen.width > 992) {
 
             switch (index) {
                 case 1: //翻到第一屏时的动画初始状态
-                    $(".aboutUs>:nth-child(4),.aboutUs>:nth-child(5),.aboutUs>:nth-child(6)").css({
+                    // 
+                    $(".aboutUs>:nth-child(4)").css({
+                        "top": "100%",
+                        "opacity": "0",
+                    });
+                    // 
+                    $(".aboutUs>:nth-child(5)").css({
+                        "top": "100%",
+                        "opacity": "0",
+                    });
+                    // 
+                    $(".aboutUs>:nth-child(6)").css({
                         "opacity": "0",
                     });
                     break;
@@ -205,15 +216,24 @@ if (window.screen.width > 992) {
             }
             setTimeout(function() {
                 switch (index) {
-                    case 1: //翻到第一屏时的动画效果
-                        $(".aboutUs>:nth-child(4),.aboutUs>:nth-child(5)").animate({
+                    case 1:
+                        //翻到第一屏时的动画效果
+                        // $(".aboutUs>:nth-child(4),.aboutUs>:nth-child(5)").animate({
+                        //     "opacity": "1"
+                        // }, 400);
+                        $(".aboutUs>:nth-child(4)").animate({
+                            "top": "23%",
                             "opacity": "1"
-                        }, 400);
+                        }, 450);
+                        $(".aboutUs>:nth-child(5)").animate({
+                            "top": "20%",
+                            "opacity": "1"
+                        }, 450);
                         setTimeout(function() {
                             $(".aboutUs>:nth-child(6)").animate({
                                 "opacity": "1"
-                            }, 500);
-                        }, 500);
+                            }, 600);
+                        }, 600);
                         break;
                     case 2:
                         $(".genuine").children().eq(3).children().animate({
@@ -387,4 +407,10 @@ if (window.screen.width > 992) {
             });
         }
     });
+    /***
+     *  代码版权归华东交通大学董励强所有！！！
+     *  盗用必究！！！
+     * 联系方式：18279159663
+     * e-mail：ecjtudongliqiang@163.com
+     */
 }

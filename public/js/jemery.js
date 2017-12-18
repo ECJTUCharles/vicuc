@@ -5,6 +5,13 @@ $(function() {
     //     "margin-top": wi + "px"
     // });
 
+    /***
+     *  代码版权归华东交通大学董励强所有！！！
+     *  盗用必究！！！
+     * 联系方式：18279159663
+     * e-mail：ecjtudongliqiang@163.com
+     */
+
     $('#s-nav>li>a').hover(function() {
         $(this).children('.cntoen').css('display', 'block');
     }, function() {
