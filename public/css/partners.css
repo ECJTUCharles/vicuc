@@ -407,6 +407,9 @@ h2 {
     .partnersanddeep .img-phone img {
         width: 100%;
     }
+    .partnersanddeep .pc-img {
+        display: none;
+    }
     .company-logo .complo {
         display: none;
     }
