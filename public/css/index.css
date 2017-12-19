@@ -485,7 +485,7 @@ nav.mobile span.icon-bar {
 }
 
 .main.mobile #tab1 .tab-text {
-    top: 10%;
+    top: 15%;
 }
 
 .main.mobile #tab2 .tab-text,
@@ -494,7 +494,10 @@ nav.mobile span.icon-bar {
     color: #eee;
 }
 
-.main.mobile #tab3,
+.main.mobile #tab3 {
+    margin-bottom: 30px;
+}
+
 .main.mobile #tab5 {
     margin-bottom: 50px;
 }
@@ -583,6 +586,7 @@ nav.mobile span.icon-bar {
 
 .main.mobile .tab-bg {
     width: 100%;
+    margin-top: 20px;
 }
 
 .main.mobile .tab-text {
